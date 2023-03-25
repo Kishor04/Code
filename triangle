@@ -1,0 +1,11 @@
+#!/bin/bash
+read -p "Enter " a
+read -p "Enter " b
+read -p "Enter " c
+if [[ $a == $b && $a == $c && $c == $b ]]; then
+echo "EQUILATERAL"
+elif [[ $a == $b || $a == $c || $c == $b ]]; then
+echo "ISOSCELES"
+else
+echo "SCALENE"
+fi
